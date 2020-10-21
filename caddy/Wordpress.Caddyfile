@@ -1,0 +1,10 @@
+wp.test:80 {
+    root * /home/geeksesi/public_html/wordpress
+    php_fastcgi unix//run/php/php7.4-fpm.sock
+    file_server
+}
+padmin.test:80 {
+    root * /home/geeksesi/public_html/phpmyadmin
+    php_fastcgi unix//run/php/php7.4-fpm.sock
+    file_server
+}
